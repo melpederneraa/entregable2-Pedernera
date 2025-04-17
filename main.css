@@ -1,0 +1,347 @@
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Estilo global para el body */
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*header y menu de navegacion*/
+  
+  header {
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+    width: 100%;
+  }
+  header img {
+    width: 10%;
+  }
+  header nav ul {
+    color: black;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  header nav ul li {
+    font-size: 18px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  header nav ul li a:hover {
+    background-color: #d63384;
+    color: white;
+  }
+  
+  /* Título principal */
+  .titulo {
+    color: #d63384;
+    margin: 20px 0;
+    font-size: 2rem;
+  }
+  
+  /* Banner de ofertas */
+  
+  #ofertas {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  /*seccion de productos*/
+  
+  .productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .card h3 {
+    color: #d63384;
+    margin: 10px 0;
+  }
+  .card p {
+    font-size: 14px;
+    color: #555;
+  }
+  .card .precio {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d63384;
+    margin: 10px 0;
+  }
+  .card .btn-comprar {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .card .btn-comprar:hover {
+    background-color: #b82b6d;
+  }
+  /*seccion de contacto*/
+  
+  .contacto {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  .contacto h2 {
+    text-align: center;
+    color: #d63384;
+    margin-bottom: 20px;
+  }
+  .contacto input, .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .contacto button {
+    width: 100%;
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .contacto button:hover {
+    background-color: rgb(178.187755102, 35.812244898, 106.5632653061);
+  }
+  
+  /* Contenedor de Preguntas Frecuentes */
+  .faq-container {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq {
+    margin-bottom: 20px;
+  }
+  .faq h3 {
+    color: #d63384;
+    font-size: 1.5rem;
+  }
+  .faq p {
+    color: #555;
+    font-size: 1rem;
+  }
+  /*seccion de la historia y creador*/
+  #historia, #creador, #faq {
+    padding: 50px 0;
+  }
+  
+  .historia, .quien-la-creo {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+  }
+  .historia .contenido, .quien-la-creo .contenido {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+  .historia .texto, .quien-la-creo .texto {
+    flex: 1;
+    text-align: left;
+  }
+  .historia .texto h2, .quien-la-creo .texto h2 {
+    color: #d63384;
+    margin-bottom: 20px;
+  }
+  .historia .texto p, .quien-la-creo .texto p {
+    font-size: 16px;
+    color: #555;
+  }
+  .historia .img, .quien-la-creo .img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .historia .img img, .quien-la-creo .img img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .boton {
+    background-color: #d63384;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .boton:hover {
+    background-color: #c12573;
+  }
+  
+  /*footer*/
+  
+  footer {
+    background-color: #ffb6c1;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  /*responsive*/
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+    header nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+    header img {
+      width: 15%;
+    }
+    .productos {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contacto {
+      width: 90%;
+    }
+  
+  }
+/* Estilos para tarjetas de perfumes */
+
+.grid-perfumes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .tarjeta-perfume {
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .tarjeta-perfume:hover {
+    transform: scale(1.05);
+  }
+  
+  .tarjeta-perfume h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .tarjeta-perfume button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  .tarjeta-perfume button:hover {
+    background-color: #e0559f;
+  }
+  
+  /* Estilos del carrito */
+  .carrito {
+    background-color: #fff0f5;
+    padding: 2rem;
+    border-top: 2px solid #ffb6c1;
+    margin-top: 3rem;
+  }
+  
+  .item-carrito {
+    background-color: #ffe4ec;
+    padding: 0.75rem;
+    border: 1px solid #ffb6c1;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item-carrito button {
+    background-color: #dc143c;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .item-carrito button:hover {
+    background-color: #a10e2e;
+  }
+  

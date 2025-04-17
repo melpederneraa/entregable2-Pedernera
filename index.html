@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfumería</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <!-- logo -->
+    <img src="imagenes/logo.png" alt="Logo de la perfumería">
+    <!-- Menú de navegación -->
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="perfume.html">Perfumes</a></li>
+        <li><a href="perfume.html#mujer">Mujer</a></li>
+        <li><a href="perfume.html#hombre">Hombre</a></li>
+        <li><a href="perfume.html#niño">Niño</a></li>
+        <li><a href="perfume.html#unisex">Unisex</a></li>
+        <li><a href="sobrenosotros.html#historia">Sobre Nosotros</a></li>
+        <li><a href="preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="titulo">Nuestros Perfumes</h1>
+
+    <!-- Formulario para agregar al carrito -->
+    <form id="form-perfume">
+        <label>Tipo:
+            <select id="tipo">
+                <option value="">Seleccionar</option>
+                <option value="Mujer">Mujer</option>
+                <option value="Hombre">Hombre</option>
+                <option value="Niño">Niño</option>
+                <option value="Unisex">Unisex</option>
+            </select>
+        </label>
+        <label>Marca: <input type="text" id="marca"></label>
+        <label>Nombre: <input type="text" id="nombre"></label>
+        <label>Cantidad: <input type="number" id="cantidad" min="1"></label>
+        <button type="submit">Agregar al carrito</button>
+    </form>
+
+    <!-- Mensajes -->
+    <section id="mensaje"></section>
+
+    <!-- Carrito -->
+    <h2>Carrito</h2>
+    <ul id="carrito-lista"></ul>
+    <p id="total"></p>
+
+    <!-- Sección de perfumes -->
+    <h2>Perfumes mujer</h2>
+    <section id="mujer" class="mujer">
+      <section class="productos">
+        <div class="card">
+          <img src="imagenes/PerfumeVeryGoodGirl.jpg" alt="Carolina Herrera Perfume">
+          <h3>Very Good Girl - Carolina Herrera</h3>
+          <p>Fragancia seductora con notas de rosa y vainilla.</p>
+          <span class="precio">$75.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="card">
+          <img src="imagenes/Perfumecher18M.jpg" alt="Cher 18 con Brillos Perfume">
+          <h3>Cher 18 Glitter - CHER BEAUTY</h3>
+          <p>Aroma dulce con un toque de brillo especial.</p>
+          <span class="precio">$65.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="card">
+          <img src="imagenes/PerfumeMissDiorM.webp" alt="Miss Dior Perfume">
+          <h3>Miss Dior - Dior</h3>
+          <p>Fragancia floral con notas de jazmín y rosa.</p>
+          <span class="precio">$89.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="card">
+          <img src="imagenes/PerfumeScandalM.webp" alt="Scandal Perfume">
+          <h3>Scandal - Jean Paul Gaultier</h3>
+          <p>Notas de miel, pachulí y flor de naranjo.</p>
+          <span class="precio">$79.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+      </section>  
+    </section>
+
+    <!-- Sección de perfumes para hombre-->
+    <section id="hombre" class="hombre">
+      <h2>Perfumes Hombre</h2>
+      <section class="productos">
+        <div class="card">
+          <img src="imagenes/PerfumeOneMillion.webp" alt="One Million Perfume">
+          <h3>One Million - Paco Rabanne</h3>
+          <p>Aroma cálido con notas de cuero, naranja y menta.</p>
+          <span class="precio">$99.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+      
+        <div class="card">
+          <img src="imagenes/Perfume212H.jpeg" alt="212 Perfume">
+          <h3>212 - Carolina Herrera</h3>
+          <p>Fragancia fresca con un toque de especias y maderas.</p>
+          <span class="precio">$89.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+      
+        <div class="card">
+          <img src="imagenes/PerfumeChesterIceH.webp" alt="Chester Ice Perfume">
+          <h3>Chester Ice - Chester</h3>
+          <p>Aroma refrescante con notas de menta y especias.</p>
+          <span class="precio">$59.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+      
+        <div class="card">
+          <img src="imagenes/PerfumeInvictusH.jpg" alt="Invictus Perfume">
+          <h3>Invictus - Paco Rabanne</h3>
+          <p>Notas de laurel, pomelo y madera de guayaco.</p>
+          <span class="precio">$109.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+      </section>  
+    </section>
+
+    <!-- Sección de perfumes para niños -->
+    <section id="niño" class="niño">
+      <h2>Perfumes niño</h2>
+      <section class="productos">
+        <div class="card">
+          <img src="imagenes/PerfumePaco.jpeg" alt="Perfume Paco">
+          <h3>Paco - Paco Rabanne</h3>
+          <p>Fragancia dulce con notas de vainilla y frutas.</p>
+          <span class="precio">$29.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+    
+        <div class="card">
+          <img src="imagenes/PerfumePibesN.jpg" alt="Perfume Pibe's">
+          <h3>Pibe's - Caro Cuore</h3>
+          <p>Fragancia fresca y cítrica ideal para niños.</p>
+          <span class="precio">$19.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+    
+        <div class="card">
+          <img src="imagenes/PerfumeMujercitasSunnyN.webp" alt="Mujercitas Sunny Perfume">
+          <h3>Mujercitas Sunny - Colbert</h3>
+          <p>Aroma floral y frutal, perfecto para niñas.</p>
+          <span class="precio">$24.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+    
+        <div class="card">
+          <img src="imagenes/PerfumeMujercitasFunnyN.webp" alt="Mujercitas Funny Perfume">
+          <h3>Mujercitas Funny - Colbert</h3>
+          <p>Notas frescas y dulces, ideal para las más pequeñas.</p>
+          <span class="precio">$24.99</span>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+      </section>
+    </section>
+
+ <!-- Sección de perfumes Unisex-->
+ <section id="unisex" class="unisex">
+    <h2>Perfumes unisex</h2>
+    <section class="productos">
+      <div class="card">
+          <img src="imagenes/PerfumeCK.webp" alt="Perfume Unisex Calvin Klein">
+          <h3>Calvin Klein One - Calvin Klein</h3>
+          <p>Aroma fresco y amaderado, adecuado para todos.</p>
+          <span class="precio">$79.99</span>
+          <button class="btn-comprar">Comprar</button>
+      </div>
+  
+      <div class="card">
+          <img src="imagenes/PerfumeHumorTransformaU.png" alt="Perfume Tranforma">
+          <h3>Tranforma - Natura</h3>
+          <p>Fragancia moderna con notas florales y especiadas.</p>
+          <span class="precio">$69.99</span>
+          <button class="btn-comprar">Comprar</button>
+      </div>
+  
+      <div class="card">
+          <img src="imagenes/PerfumeLibertadU.webp" alt="Perfume Natura Libertad">
+          <h3>Libertad - Natura</h3>
+          <p>Notas frescas de frutas y flores, perfecta para cualquier ocasión.</p>
+          <span class="precio">$59.99</span>
+          <button class="btn-comprar">Comprar</button>
+      </div>
+  
+      <div class="card">
+          <img src="imagenes/PerfumeU.webp" alt="Perfume Unisex">
+          <h3>arakkat - </h3>
+          <p>Aroma suave con toques cítricos y florales.</p>
+          <span class="precio">$49.99</span>
+          <button class="btn-comprar">Comprar</button>
+      </div>
+  </section>
+   </section>
+<!-- footer-->
+<footer>
+  <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+</footer>
+<!--js de bt-->
+<script src="segundaentrega.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
